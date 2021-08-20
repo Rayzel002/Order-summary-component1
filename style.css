@@ -1,0 +1,345 @@
+/* ## Colors
+
+    ### Primary
+
+    - Pale blue: hsl(225, 100%, 94%)
+    - Bright blue: hsl(245, 75%, 52%)
+
+    ### Neutral
+
+    - Very pale blue: hsl(225, 100%, 98%)
+    - Desaturated blue: hsl(224, 23%, 55%)
+    - Dark blue: hsl(223, 47%, 23%)
+
+    ## Typography
+
+### Body Copy
+
+    - Font size (paragraph): 16px
+
+    ### Font
+
+    - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+    - Weights: 500, 700, 900 */
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	background: url(images/pattern-background-desktop.svg);
+	background-color: hsl(225, 100%, 94%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 0.75em;
+	font-weight: 500;
+	text-align: center;
+}
+
+.card {
+	/* margin: 0 auto; */
+	width: 24.19vw;
+	height: 32.4rem;
+	border-radius: 1em;
+	overflow: hidden;
+	position: absolute;
+	top: 8vh;
+	/* right: 27.7vw; */
+	left: 50%;
+
+	transform: translate(-50%, 0%);
+	background-color: white;
+	text-align: center;
+	box-shadow: 0px 10px 30px -10px rgba(56, 41, 224, 0.5);
+}
+
+.hero {
+	width: 100%;
+	height: 163px;
+	background: url(images/illustration-hero.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.titles {
+	text-transform: capitalize;
+	color: hsl(223, 47%, 23%);
+}
+.title1 {
+	margin: 1.75em 0 0.9rem 0;
+	font-size: 1.6em;
+	font-weight: 900;
+}
+.med_weight {
+	font-weight: 700;
+}
+.paragraph {
+	max-width: 75%;
+	margin: 0 auto;
+	color: hsl(224, 23%, 55%);
+	line-height: 1.2rem;
+}
+.pay {
+	max-width: 81.5%;
+	height: 4.5rem;
+	margin: 1rem auto;
+	border-radius: 1em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: hsl(225, 100%, 98%);
+}
+.change {
+	margin: 0 1rem 0.1rem 0;
+	font-size: 11.2px;
+	text-transform: capitalize;
+}
+.change a {
+	color: hsl(245, 75%, 52%);
+}
+
+.change a:hover {
+	opacity: 70%;
+	text-decoration: none;
+}
+.details {
+	margin-right: 2.9rem;
+	display: block;
+	line-height: 1.2rem;
+}
+
+.submit_pay_btn {
+	max-width: 81.5%;
+	height: 2.3808rem;
+	margin: 1.49rem auto 1.4rem auto;
+	border-radius: 0.8em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: hsl(245, 75%, 52%);
+	color: white;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 12px;
+	box-shadow: 0px 10px 30px -10px rgba(56, 41, 224, 0.7);
+}
+.submit_pay_btn:hover {
+	opacity: 70%;
+	cursor: pointer;
+}
+.cancel_btn a {
+	color: hsl(224, 23%, 55%);
+	box-sizing: border-box;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 11px;
+}
+.cancel_btn a:hover {
+	color: hsl(223, 47%, 23%);
+	cursor: pointer;
+}
+.attribution {
+	width: 35%;
+	margin: 5px auto 0 auto;
+	min-height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsl(225, 100%, 94%);
+	font-size: 12px;
+	font-weight: 900;
+	background-color: hsl(245, 75%, 52%);
+	border-radius: 0.5em;
+	box-shadow: 0px 10px 30px -10px rgba(56, 41, 224, 0.5);
+}
+.attribution a {
+	color: hsl(0, 0%, 100%);
+}
+.Haha a {
+	color: rgb(226, 183, 43);
+	text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+	.card {
+		height: 390px;
+	}
+	.title1 {
+		margin-top: -14px;
+		font-size: 16px;
+	}
+	.paragraph {
+		margin-top: -5px;
+		font-size: 10px;
+		line-height: 14px;
+		font-weight: 400;
+	}
+	.pay {
+		max-height: 55px;
+		margin-top: 12.3px;
+	}
+	.change {
+		margin: 0rem 0.2rem 0rem 0;
+		font-size: 9px;
+	}
+	.change:active {
+		opacity: 70%;
+	}
+	.details {
+		margin-top: -7px;
+		margin-right: 40px;
+		display: block;
+		line-height: 1.7rem;
+	}
+	.price {
+		font-size: 9.3px;
+		font-weight: 500;
+	}
+	.pay img {
+		min-width: 16%;
+		margin-left: 10px;
+	}
+	.submit_pay_btn {
+		max-height: 28px;
+		margin-top: 17px;
+		margin-bottom: 15px;
+		font-size: 10px;
+		cursor: context-menu;
+	}
+	.submit_pay_btn:active {
+		opacity: 70%;
+	}
+	.cancel_btn a {
+		color: hsl(224, 23%, 55%);
+		box-sizing: border-box;
+		text-decoration: none;
+		text-transform: capitalize;
+		font-size: 9px;
+	}
+	.cancel_btn a:active {
+		color: hsl(223, 47%, 23%);
+	}
+	.attribution {
+		width: 37%;
+	}
+}
+@media (max-width: 1000px) {
+	.card {
+		width: 223px;
+		max-height: 385px;
+	}
+	.title1 {
+		margin-top: -35px;
+		font-size: 15px;
+	}
+	.paragraph {
+		margin-top: -3px;
+		font-size: 10px;
+		line-height: 17px;
+	}
+	.pay {
+		max-height: 55px;
+		margin-top: 16.77px;
+		border-radius: 0.7rem;
+	}
+	.change {
+		margin: 0rem 0rem 0rem 0;
+		font-size: 9px;
+	}
+	.change:active {
+		opacity: 70%;
+	}
+	.details {
+		margin-top: 0px;
+		margin-right: 20px;
+		font-size: 10px;
+		display: block;
+		line-height: 1.18rem;
+	}
+	.price {
+		font-size: 9.3px;
+		font-weight: 500;
+	}
+	.pay img {
+		width: 14%;
+		margin-left: 10px;
+	}
+	.title2 {
+		font-size: 10px;
+	}
+	.submit_pay_btn {
+		max-height: 34px;
+		margin-top: 0px;
+		margin-bottom: 14px;
+		border-radius: 0.5rem;
+		font-size: 11px;
+		cursor: context-menu;
+	}
+	.submit_pay_btn:active {
+		opacity: 70%;
+	}
+	.cancel_btn a {
+		color: hsl(224, 23%, 55%);
+		box-sizing: border-box;
+		text-transform: capitalize;
+		font-weight: 700;
+		font-size: 8.5px;
+	}
+	.cancel_btn a:active {
+		color: hsl(223, 47%, 23%);
+	}
+	.attribution {
+		width: 35%;
+		font-size: 11px;
+	}
+}
+@media (max-width: 900px) {
+	.attribution {
+		margin-top: 15px;
+		font-size: 10px;
+		width: 40%;
+	}
+}
+@media (max-width: 800px) {
+	.attribution {
+		margin-top: 15px;
+		font-size: 10px;
+		width: 45%;
+	}
+}
+@media (max-width: 700px) {
+	.attribution {
+		font-size: 10px;
+		width: 49%;
+	}
+}
+@media (max-width: 610px) {
+	.attribution {
+		font-size: 10px;
+		width: 58%;
+	}
+}
+@media (max-width: 520px) {
+	.attribution {
+		margin-top: 15px;
+		font-size: 9px;
+		width: 60%;
+	}
+}
+@media (max-width: 450px) {
+	.attribution {
+		margin-top: 15px;
+		font-size: 8px;
+		width: 65%;
+	}
+
+	@media (max-width: 370px) {
+		.attribution {
+			min-height: 25px;
+			font-size: 8px;
+			width: 70%;
+		}
+	}
+}
